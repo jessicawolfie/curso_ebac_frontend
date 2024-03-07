@@ -7,8 +7,38 @@
 </head>
 <body>
     <h1>formulários</h1>
-    <form> <!-- tag para formulário-->
-        <input type="text"  /> <!-- tag para criar os campos  -->
+    <form> <!-- tag para formulário. -->
+        <input type="text" placeholder="seu nome:"  /> <!-- tag para digitar nome na caixa de texto.  -->
+        <br /> <!-- tag para pular linha. -->
+        <label for="mail">seu e-mail:</label> <!-- coloca uma etiqueta ao lado da caixa de texto. -->
+        <input id="mail" type="mail" /> <!-- recebe o id do campo, podendo selecionar ele apenas clicando em cima do nome. -->
+        <br />
+        <input type="tel" placeholder="seu telefone:" /> <br /> <!-- serve para quando o site for acessado por um smartphone subir o teclado numérico. -->
+        <input type="number" max="10" min="2" step="2" /> <br /> <!-- cria uma caixa numérica com uma seta que aumenta e diminui de 2 em 2. -->
+        <input type="file" /> <br /> <!-- para poder selecionar um arquivo. -->
+        <input type="color" /> <br />
+        <input type="checkbox" id="chebox-termos" /><label for="checkbox-termos">aceito os termos</label> <!-- para criar uma caixa de aceito os termos. -->
+        <p>
+            qual sua cor favorita?
+        </p>
+        <input type="radio" name="cor-favorita" id="cor-vermelho" /> <label for="cor-vermelha"></label> <!-- Para criar escolhas para uma pergunta. -->
+        <input type="radio" name="cor-favorita" id="cor-verde" /> <label for="cor-verde"></label> <!-- Com esse "name", quando tiver várias escolhas não vai dar bug. -->
+        <input type="radio" name="cor-favorita" id="cor-azul" /> <label for="cor-azul"></label>
+        <br />
+        <label for="qual seu filme favorito?"></label>
+        <select multiple> <!--  - Dentro da tag <select> Use a tag <option> para criar escolhas também. -->
+            <option>filme A</option>
+            <option>filme B</option>
+            <option>filme C</option>
+        </select>
+        <br />
+        <textarea></textarea> <!-- Uma caixa de texto maior para comentários por exemplo.  -->
+        <buttom type="submit"> <!-- submit:para ter função de envio. -->
+            enviar
+        </button> <!-- Para criar botões. -->
+        <button type="reset"> <!-- rset: para ter função de resetar. -->
+            limpar
+        </button>
     </form>
 </body>
 </html>
