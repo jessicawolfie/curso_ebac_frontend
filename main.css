@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} /* esse seletor se nao especificado, mudar todo o estilo.*/
+
+body > header { /* usa o sinal > para nao estilizar todos os headers.*/
+    background-color: rgb(44, 42, 42);
+    padding: 16px 0;
+    color: whitesmoke;
+} 
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img {
+    /*height: 180px*/
+    width: 100%;
+}
+
+.articles article {
+    width: 30%;
+    
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.articles article a {
+    background-color: blue;
+    color: white;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#sports {
+    background-color: rgba(0, 128, 0, 0.311);
+
+}
+
+#sports .articles article a {
+    background-color: grey;
+}
+
+#economy {
+    background-color: rgba(255, 255, 0, 0.392);
+}
+
+#economy .articles article a {
+    background-color:grey;
+}
+
+#tecnologia {
+    background-color: rgba(58, 173, 255, 0.293);
+}
+
+#tecnologia .articles article a {
+    background-color:grey;
+}
+
+#entretenimento {
+    background-color:rgba(255, 86, 86, 0.338);
+}
+
+#entretenimenti .articles article a {
+    background-color:grey;
+}
