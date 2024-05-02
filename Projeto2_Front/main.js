@@ -44,5 +44,7 @@ function atualizaMediaFinal (){
     for(let i =0; 1 < notas.length; i++){
         somaDasNotas += notas[i]
     }
-    console.log(somaDasNotas)
+
+    const media = somaDasNotas / notas.length // / = dividido
+    console.log(media)
 }
