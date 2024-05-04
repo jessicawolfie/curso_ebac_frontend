@@ -6,31 +6,33 @@
     <title>lista telefônica</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <div class="container">
+    <div>
         <header>
             <h1>lista telefônica</h1>
         </header>
+        <section>
         <form id="form-lista">
             <input type="text" id="nome" required placeholder="nome"/> 
             <input type="text" id="telefone" required placeholder="telefone"/>
             <button type="button" onclick="adicionarContato()">adicionar</button>
         </form>
-        <table>
-            <tr>
+        <table cellspacing="0">
             <thead>
                 <tr>
                     <td></td>
                     <td></td>
                 </tr>
             </thead>
-            <tbody id="corpo-tabela">
-
-            </tbody>
+            <tbody id="corpo-tabela"></tbody>
         </table>
+        </section>
+        <footer>
+            <p>&copy; JessicaWolfie2024</p>
+        </footer>
         <script src="main.js"></script>
     </div>
 </body>
