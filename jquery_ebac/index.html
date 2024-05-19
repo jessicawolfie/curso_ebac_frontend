@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBAC Motors</title>
+    <link rel="preconnect" href="http://fonts.googleapis.com">
+    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+
+<body>
+    <header>
+        <div class="container container-flex">
+            <h1>EBAC Motors</h1>
+            <div class="menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="#">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#">Em destaque</a>
+                    </li>
+                    <li>
+                        <a href="#">Promoções</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<div id="carousel-imagens">
+    <img src="./imagens-icones/images/slide1.png" alt="carro da porsche">
+    <img src="./imagens-icones/images/slide2.png" alt="carro da BMW">
+    <img src="./imagens-icones/images/slide3.png" alt="carro da ford">
+</div>
+<section id="sobre">
+    <div class="container-flex">
+        <img src="./imagens-icones/images/loja.jpg" alt="imagem da loja">
+        <div>
+            <h2>sobre a ebac motors</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, vel enim nesciunt repellat expedita, ea id fuga assumenda rerum in non, eligendi dolor itaque laboriosam! Voluptas et vero culpa porro.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, vel enim nesciunt repellat expedita, ea id fuga assumenda rerum in non, eligendi dolor itaque laboriosam! Voluptas et vero culpa porro.</p>
+        </div>
+    </div>
+</section>
+
+    <section>
+        <div class="container">
+            <h2>Em destaque</h2>
+            <ul class="container-flex">
+                <li>
+                    <img src="./imagens-icones/images/carro-bmw.png" alt="">
+                    <h3>Carro BMW</h3>
+                    <p>blabalbla, bala, blalala</p>
+                    <strong>R$250.000</strong>
+                    <button type="button">tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./imagens-icones/images/carro-bmw.png" alt="">
+                    <h3>Carro BMW</h3>
+                    <p>blabalbla, bala, blalala</p>
+                    <strong>R$250.000</strong>
+                    <button type="button">tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./imagens-icones/images/carro-bmw.png" alt="">
+                    <h3>Carro BMW</h3>
+                    <p>blabalbla, bala, blalala</p>
+                    <strong>R$250.000</strong>
+                    <button type="button">tenho interesse</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script> <!-- o jquery precisa vir antes de tudo -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#carousel-imagens').slick({
+                autoplay: true
+            })
+
+            $('.menu-hamburguer').click(function() {
+                $('nav').slideToggle()
+            })
+
+        })
+    </script>
+</body>
+</html>
