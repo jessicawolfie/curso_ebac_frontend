@@ -15,3 +15,12 @@ $('#telefone').mask('(00)00000-00000')
             }
         }
     })
+
+    $(document).ready(function(){
+        $('#carousel').slick({
+            slidesToShow: 2,
+            autoplay: true, 
+            autoplaySpeed: 1000,
+        });
+    });
+    
