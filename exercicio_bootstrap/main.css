@@ -1,0 +1,56 @@
+body {
+    background-color: rgb(250, 211, 217);
+    font-family: "Lora", serif;
+}
+
+h3 {
+    padding-bottom: 20px;
+    color: #D46399;
+}
+
+.accordion-button {
+    background-color: #d4639a84; 
+    color: #fff; 
+    border: 1px solid #edc4d8; 
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #d4639a84; 
+    color: #fff;
+    border: 1px solid #edc4d8 
+}
+
+.accordion-body {
+    background-color: #f8f9fa;
+    color: #b85987; 
+    border: 1px solid #dee2e6; 
+}
+
+.accordion-item {
+    border: 1px solid #edc4d8;
+}
+
+.accordion-button:not(.collapsed) {
+    border-bottom: none;
+}
+
+h4 {
+    color: #D46399;
+    padding-top: 80px;
+}
+
+p {
+    color: #d4639a84;
+}
+
+form {
+    color: #D46399;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    padding: 1em 0;
+}
+
